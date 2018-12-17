@@ -1,0 +1,23 @@
+{% extends "main.html"%}
+{% block content %}
+{% include "header.html" %}
+
+        <h3>Edit Item</h3>
+        <form action="#" method="post">
+            <label>Name:</label>
+            <input type="text" name="name" maxlength="50" value="{{item.name}}">
+            <br>
+            <label>Description:</label>
+            <input type="text" name="description" maxlength="250" value="{{item.description}}">
+            <br>
+            <label>Category:</label>
+            <select name="category">
+                {% for category in categories%}
+                    <option value="{{category.name}}" {% if category == item.category %} selected {% endif %}>{{category.name}}</option>
+                {% endfor %}
+            </select>
+            <br>
+            <a><button type="submit">Save</button></a>
+        </form>
+ 
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "main.html"%}
+{% block content %}
+{% include "header.html" %}
+
+
+        <h3>{{item.name}}</h3>
+        <p>{{item.description}}</p>
+        
+        {% if 'username' in session %}
+            <a href="{{url_for('editItem', category_name=item.category.name, item_name=item.name)}}"><button>Edit</button></a>
+            
+            <a href="{{url_for('deleteItem',  category_name=item.category.name, item_name=item.name)}}"><button>Delete</button></a>
+        {% endif %}
+ {% endblock %}

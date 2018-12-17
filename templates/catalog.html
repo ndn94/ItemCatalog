@@ -1,0 +1,19 @@
+{% extends "main.html"%}
+{% block content %}
+{% include "header.html" %}
+
+        {% include "categories.html" %}
+        
+            <br>
+            <div class="col-md-6">
+                {% if 'username' in session %}
+                    <a href="{{url_for('addItem')}}"><button>Add Item</button></a>
+                {% endif %}
+
+                <h3>Latest Items</h3>
+                {% for item in items%}
+                    <p>{{item.name}} ({{item.category.name}})</p>
+                {% endfor %}
+            </div>   
+        </div>
+  {% endblock %}

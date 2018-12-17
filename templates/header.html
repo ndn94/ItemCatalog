@@ -1,0 +1,25 @@
+<div class="row top-menu">
+    <div class="col-md-6">
+        <h1>Catalog App</h1>
+    </div>
+    <div class="col-md-6">
+        {% if 'username' not in session %}
+            <a href="{{url_for('showLogin')}}"><button>Login</button></a>
+        <br>
+        {% else %}
+            <a href="{{url_for('showCatalog')}}">Home</a>
+            <a href="{{url_for('gdisconnect')}}"><button>Logout</button></a>
+        {% endif %}
+    </div>
+</div>
+<div class="row flash">
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li> <strong> {{ message }} </strong> </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</div>

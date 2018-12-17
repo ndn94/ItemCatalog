@@ -1,0 +1,14 @@
+{% extends "main.html"%}
+{% block content %}
+{% include "header.html" %}
+
+        {% include "categories.html" %}
+        
+        
+        <h3>{{category.name}}</h3>
+        {% for item in items%}
+            <a href="{{url_for('showItemDetails', category_name=category.name, item_name=item.name)}}">{{item.name}}</a>
+            <br>
+        {% endfor %}
+  
+  {% endblock %}
