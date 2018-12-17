@@ -32,7 +32,7 @@ To get the Google login:
 5. Click on Create credentials > OAuth client ID
 6. Select Wep application
 7. On Authorized JavaScipt origins add [http://localhost:5000] (http://localhost:5000)
-8. On Authorized redirect URIs add [http://localhost:5000/login] (http://localhost:5000/login) & [[http://localhost:5000/gconnect] (http://localhost:5000/gconnect)
+8. On Authorized redirect URIs add [http://localhost:5000/login] (http://localhost:5000/login) & [http://localhost:5000/gconnect] (http://localhost:5000/gconnect)
 9. Click on Create
 10. Click on DOWNLOAD JSON
 11. Rename the downlaoded file to client_secrets.json
