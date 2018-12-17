@@ -1,5 +1,5 @@
 # Item Catalog Project
-This is project #2 required for Udacity Full-Stack Web Developer Nanodegree program.
+This is project #4 required for Udacity Full-Stack Web Developer Nanodegree program.
 It is a web application uses Flask framework to retrieve the data from the database
 in order to show different categories in a catalog along with their items.
 
@@ -25,14 +25,14 @@ in order to show different categories in a catalog along with their items.
 
 ## Using Google Login
 To get the Google login:
-1. Go to [Google Dev Console] (https://console.developers.google.com/)
+1. Go to [Google Dev Console](https://console.developers.google.com/)
 2. Login with your Google account
 3. Click on APIs & Services
 4. Select Credentials 
 5. Click on Create credentials > OAuth client ID
 6. Select Wep application
-7. On Authorized JavaScipt origins add [http://localhost:5000] (http://localhost:5000)
-8. On Authorized redirect URIs add [http://localhost:5000/login] (http://localhost:5000/login) & [http://localhost:5000/gconnect] (http://localhost:5000/gconnect)
+7. On Authorized JavaScipt origins add [http://localhost:5000](http://localhost:5000)
+8. On Authorized redirect URIs add [http://localhost:5000/login](http://localhost:5000/login) & [http://localhost:5000/gconnect](http://localhost:5000/gconnect)
 9. Click on Create
 10. Click on DOWNLOAD JSON
 11. Rename the downlaoded file to client_secrets.json
