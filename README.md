@@ -22,7 +22,7 @@ in order to show different categories in a catalog along with their items.
 3. `cd /vagrant` to navigate to vagrant directory
 4. `python database_setup.py`
 5. `python seeder.py`
-6. `python logAnalysis_p1.py`
+6. `python application.py`
 
 ## Using Google Login
 To get the Google login:
