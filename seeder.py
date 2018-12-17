@@ -27,7 +27,8 @@ session.query(User).delete()
 
 # Create dummy user
 User1 = User(name="Robo Barista", email="tinnyTim@udacity.com",
-             picture='https://pbs.twimg.com/profile_images/2671170543/18debd694829ed78203a5a36dd364160_400x400.png')
+             picture="""https://pbs.twimg.com/profile_images/
+             2671170543/18debd694829ed78203a5a36dd364160_400x400.png""")
 session.add(User1)
 session.commit()
 
@@ -37,28 +38,34 @@ Category1 = Category(user_id=1, name="Soccer")
 session.add(Category1)
 session.commit()
 
-Item1 = Item(user_id=1, name="Two shinguards", description="Two shinguards is an item of soccer game that is an intersting game", date=datetime.datetime.now(), category=Category1)
+Item1 = Item(user_id=1, name="Two shinguards", description="""Two shinguards is an
+             item of soccer game that is an intersting game""",
+             date=datetime.datetime.now(), category=Category1)
 
 session.add(Item1)
 session.commit()
 
 
-Item2 = Item(user_id=1, name="Shinguards", description="Shinguards is an item of soccer game that is an intersting game", date=datetime.datetime.now(), category=Category1)
+Item2 = Item(user_id=1, name="Shinguards", description="""Shinguards is an item
+             of soccer game that is an intersting game""",
+             date=datetime.datetime.now(), category=Category1)
 
 session.add(Item2)
 session.commit()
 
-Item3 = Item(user_id=1, name="Jersey", description="Jersey is an item of soccer game that is an intersting game", date=datetime.datetime.now(), category=Category1)
+Item3 = Item(user_id=1, name="Jersey", description="""Jersey is an
+             item of soccer game that is an intersting game""",
+             date=datetime.datetime.now(), category=Category1)
 
 session.add(Item3)
 session.commit()
 
-Item4 = Item(user_id=1, name="Soccer Cleats", description="Soccer Cleats is an item of soccer game that is an intersting game", date=datetime.datetime.now(), category=Category1)
+Item4 = Item(user_id=1, name="Soccer Cleats", description=""""Soccer
+             Cleats is an item of soccer game that is an intersting game""",
+             date=datetime.datetime.now(), category=Category1)
 
 session.add(Item4)
 session.commit()
-
-
 
 # Items for Hockey
 Category2 = Category(user_id=1, name="Hockey")
@@ -67,7 +74,9 @@ session.add(Category2)
 session.commit()
 
 
-Item1 = Item(user_id=1, name="Stick", description="Stick is an item of hockey game that is an intersting game", date=datetime.datetime.now(), category=Category2)
+Item1 = Item(user_id=1, name="Stick", description="""Stick
+             "is an item of hockey game that is an intersting game""",
+             date=datetime.datetime.now(), category=Category2)
 
 session.add(Item1)
 session.commit()
@@ -80,12 +89,16 @@ session.add(Category3)
 session.commit()
 
 
-Item1 = Item(user_id=1, name="Snowboard", description="Snowboard is an item of snowboarding game that is an intersting game", date=datetime.datetime.now(), category=Category3)
+Item1 = Item(user_id=1, name="Snowboard", description="""Snowboard
+             "is an item of snowboarding game that is an intersting game""",
+             date=datetime.datetime.now(), category=Category3)
 
 session.add(Item1)
 session.commit()
 
-Item2 = Item(user_id=1, name="Goggles", description="Goggles is an item of snowboarding game that is an intersting game", date=datetime.datetime.now(), category=Category3)
+Item2 = Item(user_id=1, name="Goggles", description="""Goggles
+             "is an item of snowboarding game that is an intersting game""",
+             date=datetime.datetime.now(), category=Category3)
 
 session.add(Item2)
 session.commit()
@@ -98,7 +111,9 @@ session.add(Category4)
 session.commit()
 
 
-Item1 = Item(user_id=1, name="Frisbee", description="Frisbee is an item of frisbee game that is an intersting game", date=datetime.datetime.now(), category=Category4)
+Item1 = Item(user_id=1, name="Frisbee", description="""Frisbee
+             "is an item of frisbee game that is an intersting game""",
+             date=datetime.datetime.now(), category=Category4)
 
 
 # Items for Baseball
@@ -108,8 +123,9 @@ session.add(Category5)
 session.commit()
 
 
-Item1 = Item(user_id=1, name="Bat", description="Bat is an item of baseball game that is an intersting game", date=datetime.datetime.now(), category=Category5)
-
+Item1 = Item(user_id=1, name="Bat", description="""Bat is an item of
+             "baseball game that is an intersting game""",
+             date=datetime.datetime.now(), category=Category5)
 
 
 print "added menu items!"

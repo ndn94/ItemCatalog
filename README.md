@@ -13,7 +13,8 @@ in order to show different categories in a catalog along with their items.
 ## Prerequisites 
 1. Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
 2. Download and install [Virtual Machine](https://www.virtualbox.org/wiki/Downloads) 
-3. Download or clone this project and put it inot the **vagrant** directory.
+3. Download [udacity-fullstack-vm](https://github.com/udacity/fullstack-nanodegree-vm)
+4. Download or clone this project and put it inot the downloaded **vagrant** directory.
 
 ###### Run the following commands from the terminal in the folder where your vagrant is installed in:
 1. `vagrant up`

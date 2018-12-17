@@ -308,6 +308,12 @@ def catalogJSON():
     return jsonify(Category=categories_list)
 
 
+@app.route('/catalog/<int:category_id>/<int:item_id>/JSON')
+def itemJSON(category_id, item_id):
+    item = session.query(Item).filter_by(id=item_id, category_id=category_id).one()
+    return jsonify(item=[item.serialize])
+
+
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.debug = True

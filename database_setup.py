@@ -40,7 +40,7 @@ class Item(Base):
     description = Column(String(250))
     date = Column(DateTime, nullable=False)
     category_id = Column(Integer, ForeignKey('category.id'))
-    category = relationship(Category)
+    category = relationship(Category, backref="item")
     user_id = Column(Integer, ForeignKey('user.id'))
     user = relationship(User)
 
